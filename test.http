@@ -1,0 +1,23 @@
+GET http://localhost:9000/store
+
+###
+
+GET http://localhost:9000/store?key=sample
+
+###
+
+POST http://localhost:9000/store
+content-type: application/json
+
+{
+    "key": "sample",
+    "value": "1234"
+}
+
+###
+
+DELETE http://localhost:9000/store?key=sample
+
+###
+
+GET http://localhost:9000/history?key=sample
